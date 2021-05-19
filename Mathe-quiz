@@ -11,3 +11,7 @@ while (eingabe != "x"):
     if eingabe == loesung:
         print "Die Lösung ist richtig!"
         punkte = punkte + 1
+    else:
+        print "Leider falsch! richtig wäre". loesung
+        fehler = fehler + 1
+        print "OK,",punkte,"Punkte und",fehler,"Fehler."
