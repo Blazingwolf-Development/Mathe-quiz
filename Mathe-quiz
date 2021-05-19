@@ -1,0 +1,13 @@
+import random
+punkte = 0
+fehler = 0
+eingabe = 0
+while (eingabe != "x"):
+    zahl1 = random.randint(3,9)
+    zahl2 = random.randint(3,9)
+    loesung = zahl1 * zahl2
+    print zahl1,"x",zahl2
+    eingabe = input("Wie lautet die Lösung?")
+    if eingabe == loesung:
+        print "Die Lösung ist richtig!"
+        punkte = punkte + 1
